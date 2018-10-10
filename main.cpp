@@ -59,6 +59,10 @@ int main()
             wait(.25);
         }
     }
+
+	delete jukebox;
+	jukebox = nullptr;
     
 }// End
+
 
