@@ -61,8 +61,9 @@ int main()
     }
 
 	delete jukebox;
-	jukebox = nullptr;
+	jukebox = NULL;
     
 }// End
+
 
 
