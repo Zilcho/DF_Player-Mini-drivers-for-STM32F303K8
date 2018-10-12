@@ -3,7 +3,7 @@
 * @author:      Rony Calderon - ronyc@nevada.unr.edu
 * @board:       NUCLEO-F303K8 STM32F303K8T6 ARM®32-bit Cortex®-M4 CPU with FPU - Link: https://os.mbed.com/platforms/ST-Nucleo-F303K8/
 * @compiler:    MBed OS 1.10.18.0
-* @date:        October 5, 2018
+* @date:        October 7, 2018
 * @version:     v1.01
 * @ver. notes:  Header file used to implement the core method and functionality of the DF_player mini SD card module.
                 Please look at http://www.picaxe.com/docs/spe033.pdf for the details on the datasheet used to implement
@@ -102,6 +102,7 @@ class DF_player
         // Basic methods to control the DF_player
         void play();
         void next_song();
+        void previous_song();
         void volume_down();
         void volume_up();
         void play_track(uint16_t track);

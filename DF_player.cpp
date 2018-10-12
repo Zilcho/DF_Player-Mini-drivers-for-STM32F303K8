@@ -3,7 +3,7 @@
 * @author:      Rony Calderon - ronyc@nevada.unr.edu
 * @board:       NUCLEO-F303K8 STM32F303K8T6 ARM®32-bit Cortex®-M4 CPU with FPU - Link: https://os.mbed.com/platforms/ST-Nucleo-F303K8/
 * @compiler:    MBed OS 1.10.18.0
-* @date:        October 5, 2018
+* @date:        October 7, 2018
 * @version:     v1.01
 * @ver. notes:  Implementation source file for the DF_player.h methods.
 
@@ -108,6 +108,21 @@ void DF_player::play()
 void DF_player::next_song()
 {
     sendCmd(NEXT_SONG, 0, 0);
+}
+
+
+/*
+* @brief:   previous_song() method for the DF_player class
+* @details: Send the command to the sendCmd method to start the previous song (if available)
+* @pre:     none
+* @post:    A command is sent to the module
+* @param:   none
+            
+* @return:  none (void)    
+*/
+void DF_player::previous_song()
+{
+    sendCmd(PREVIOUS_SONG, 0, 0);
 }
 
 
